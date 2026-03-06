@@ -9,3 +9,6 @@ logs/
 data/
 
 clean_model/
+logs/
+
+scdc

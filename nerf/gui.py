@@ -1,7 +1,13 @@
 import math
 import torch
 import numpy as np
-import dearpygui.dearpygui as dpg
+#import dearpygui.dearpygui as dpg
+try:
+    import dearpygui.dearpygui as dpg
+except ImportError:
+    dpg = None
+    print("Warning: dearpygui not found or incompatible GLIBC. GUI will be disabled.")
+
 from scipy.spatial.transform import Rotation as R
 
 from .utils_wtmk import *
